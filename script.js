@@ -4,6 +4,7 @@ const audioAppear = new Audio("SOUND/appear.mp3");
 
 imageContainers.forEach((container) => {
   container.addEventListener("click", () => {
+    audioDisappear.play();
     const image = container.querySelector(".project-image");
     image.style.transform = "scale(0)";
     image.style.opacity = "0";
@@ -15,7 +16,6 @@ imageContainers.forEach((container) => {
         image.classList.add("hidden");
         const classes = image.className.split(" ");
         const currentClass = classes[0];
-        audioDisappear.play();
         console.log(`Clicked image: ${currentClass}`);
         if (currentClass == "harp") {
           console.log(harpList);
