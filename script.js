@@ -1,5 +1,5 @@
 const imageContainers = document.querySelectorAll(".project");
-const audioDisappear = new Audio("SOUND/appear_1.mp3");
+const audioDisappear = new Audio("SOUND/disappear.mp3");
 const audioAppear = new Audio("SOUND/appear.mp3");
 
 imageContainers.forEach((container) => {
